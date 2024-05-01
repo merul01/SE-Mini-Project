@@ -85,7 +85,7 @@ const ChooseUser = ({ visitor }) => {
   return (
     <StyledContainer>
       <Container>
-        <Grid container spacing={2} justifyContent="center">
+        <Grid container spacing={2} justifyContent="center" paddingTop="180px">
           <Grid item xs={12} sm={6} md={4}>
             <div onClick={() => navigateHandler("Admin")}>
               <StyledPaper elevation={3}>
@@ -108,7 +108,7 @@ const ChooseUser = ({ visitor }) => {
                 <StyledTypography>
                   Student
                 </StyledTypography>
-                Login as a student to explore course materials and assignments and other services.
+                Login as a student to track attendance and checkout marks.
               </div>
             </StyledPaper>
           </Grid>
@@ -121,7 +121,7 @@ const ChooseUser = ({ visitor }) => {
                 <StyledTypography>
                 faculty
                 </StyledTypography>
-                Login as a faculty to create courses, assignments, and track student progress.
+                Login as a faculty to provide attendace and marks and also track their progress.
               </div>
             </StyledPaper>
           </Grid>

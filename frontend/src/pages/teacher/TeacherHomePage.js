@@ -3,7 +3,7 @@ import SeeNotice from '../../components/SeeNotice';
 import CountUp from 'react-countup';
 import styled from 'styled-components';
 import Students from "../../assets/img1.png";
-import Lessons from "../../assets/subjects.svg";
+import Lessons from "../../assets/img2.png";
 import Tests from "../../assets/assignment.svg";
 import Time from "../../assets/time.svg";
 import { getClassStudents, getSubjectDetails } from '../../redux/sclassRelated/sclassHandle';
@@ -49,7 +49,7 @@ const TeacherHomePage = () => {
                             <Data start={0} end={numberOfSessions} duration={5} />
                         </StyledPaper>
                     </Grid>
-                    <Grid item xs={12} md={3} lg={3}>
+                    {/* <Grid item xs={12} md={3} lg={3}>
                         <StyledPaper>
                             <img src={Tests} alt="Tests" />
                             <Title>
@@ -57,7 +57,7 @@ const TeacherHomePage = () => {
                             </Title>
                             <Data start={0} end={24} duration={4} />
                         </StyledPaper>
-                    </Grid>
+                    </Grid> */}
                     {/* <Grid item xs={12} md={3} lg={3}>
                         <StyledPaper>
                             <img src={Time} alt="Time" />
@@ -66,11 +66,11 @@ const TeacherHomePage = () => {
                             </Title>
                             <Data start={0} end={30} duration={4} suffix="hrs"/>                        </StyledPaper>
                     </Grid> */}
-                    <Grid item xs={12}>
+                    {/* <Grid item xs={12}>
                         <Paper sx={{ p: 2, display: 'flex', flexDirection: 'column' }}>
                             <SeeNotice />
                         </Paper>
-                    </Grid>
+                    </Grid> */}
                 </Grid>
             </Container>
         </>

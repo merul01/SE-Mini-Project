@@ -16,15 +16,14 @@ const Homepage = () => {
                     <StyledPaper elevation={3}>
                         <StyledTitle>
                             Welcome to
-                            <br />
-                            DJSCE Campus Management
-                            <br />
-                            System
+                            <br />DJSCE 
+                            <br />Attendance Management 
+                            <br />System
                         </StyledTitle>
                         <StyledText>
-                            Streamline Intitute management, class organization, and add students and faculty.
-                            Seamlessly track attendance, assess performance, and provide feedback.
-                            Access records, view marks, and communicate effortlessly.
+                            Attendance management, class organization
+                            and students and faculty details.
+                            <br />Seamlessly track attendance and marks.
                         </StyledText>
                         <StyledBox>
                             <StyledLink to="/choose">
@@ -32,13 +31,13 @@ const Homepage = () => {
                                     Login
                                 </LightPurpleButton>
                             </StyledLink>
-                            <StyledLink to="/chooseasguest">
+                            {/* <StyledLink to="/chooseasguest">
                                 <Button variant="outlined" fullWidth
                                     sx={{ mt: 2, mb: 3, color: "#7f56da", borderColor: "#7f56da" }}
                                 >
                                     Login as Guest
                                 </Button>
-                            </StyledLink>
+                            </StyledLink> */}
                             <StyledText>
                                 Don't have an account?{' '}
                                 <Link to="/Adminregister" style={{color:"#550080"}}>
@@ -64,14 +63,15 @@ const StyledContainer = styled(Container)`
 
 const StyledPaper = styled.div`
   padding: 24px;
+  padding-left: 98px;
   height: 100vh;
 `;
 
 const StyledBox = styled(Box)`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content:center;
+//   align-items: center;
+//   justify-content:center;
   gap: 16px;
   padding: 24px;
 `;
